@@ -18,13 +18,18 @@ We will build the RewardBoard using React dnd
  
 React dnd terminology will be used in subsequent portions of this note.
 
-We will use React Boostrap
-
-    https://react-bootstrap.github.io/
-
-for building the RewardBoard UI.
-
 # Reward Board
+Reward Board has multiple swim lanes. Each reward has an associated swim lane. 
+
+## Swim Lanes
+Each swim lane has the following info
+
+    {
+        rewardId: reward_item_source_id
+        parentCategories: [category_drop_targets]
+    }
+    
+nn
 
     
 
