@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import './style.scss';
+
 import { Table } from 'reactstrap';
-import { Reward } from './Reward'
-// import { Dustbin } from './Dustbin'
-import { TableCell } from './TableCell'
+import { RewardItemSource } from './RewardItemSource'
+
+import { CategoryDropTarget } from './CategoryDropTarget'
 
 const _ = require("lodash")
 
 
-export  default function RewardsTable(props) {
+export  default function RewardBoard(props) {
 
     return (
         <div>
@@ -29,44 +30,44 @@ export  default function RewardsTable(props) {
                 </thead>
                 <tbody>
                 <tr>
-                    <td scope="row"><Reward name={'R1'} /></td>
-                    <td><TableCell name={'C1'}/></td>
+                    <td scope="row"><RewardItemSource name={'R1'} /></td>
+                    <td><CategoryDropTarget name={'C1'}/></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td scope="row"><Reward name={'R2'} /></td>
+                    <td scope="row"><RewardItemSource name={'R2'} /></td>
                     <td></td>
-                    <td><TableCell name={'C2'} /></td>
+                    <td><CategoryDropTarget name={'C2'} /></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td scope="row"><Reward name={'R3'} /></td>
+                    <td scope="row"><RewardItemSource name={'R3'} /></td>
                     <td></td>
                     <td></td>
-                    <td><TableCell name={'C3'} /></td>
+                    <td><CategoryDropTarget name={'C3'} /></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td scope="row"><Reward name={'R4'} /></td>
+                    <td scope="row"><RewardItemSource name={'R4'} /></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><TableCell name={'C4'} /></td>
+                    <td><CategoryDropTarget name={'C4'} /></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td scope="row"><Reward name={'R5'} /></td>
+                    <td scope="row"><RewardItemSource name={'R5'} /></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><TableCell name={'C5'} /></td>
+                    <td><CategoryDropTarget name={'C5'} /></td>
                 </tr>
                 </tbody>
             </Table>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDrag } from 'react-dnd'
-import { ItemTypes } from './ItemTypes'
+import { ItemTypes } from '../ItemTypes'
+
 const style = {
     border: '1px dashed gray',
     backgroundColor: 'white',
@@ -10,7 +11,8 @@ const style = {
     cursor: 'move',
     float: 'left',
 }
-export const Reward = ({ name }) => {
+
+export const RewardItemSource = ({ name }) => {
     const [{ isDragging }, drag] = useDrag({
         item: { name, type: ItemTypes.Reward },
         end: (item, monitor) => {

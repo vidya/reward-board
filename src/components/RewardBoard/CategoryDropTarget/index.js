@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDrop } from 'react-dnd'
-import { ItemTypes } from './ItemTypes'
-import { Reward } from "./Reward";
+import { ItemTypes } from '../ItemTypes'
+import { RewardItemSource }  from "../RewardItemSource";
 
 const style = {
     // height: '4rem',
@@ -18,7 +18,7 @@ const style = {
     float: 'left',
 }
 
-export const TableCell = (props) => {
+export const CategoryDropTarget = (props) => {
     const myDropTarget = (props) => {
         alert(`dropItem: ${props.name}`)
         return <div ref={drop}>{props.name}</div>
@@ -51,7 +51,7 @@ export const TableCell = (props) => {
         return (
             <div ref={drop} style={{ ...style, backgroundColor }}>
                 { props.name}
-                <Reward name={dropItem.name} />
+                <RewardItemSource name={dropItem.name} />
             </div>
         )
     }
