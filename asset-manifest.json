@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/categories_and_rewards/static/css/main.728f7d5a.chunk.css",
+    "main.js": "/categories_and_rewards/static/js/main.4701dba0.chunk.js",
+    "main.js.map": "/categories_and_rewards/static/js/main.4701dba0.chunk.js.map",
+    "runtime-main.js": "/categories_and_rewards/static/js/runtime-main.2acbd216.js",
+    "runtime-main.js.map": "/categories_and_rewards/static/js/runtime-main.2acbd216.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/categories_and_rewards/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.bba0f52f.chunk.js": "/categories_and_rewards/static/js/2.bba0f52f.chunk.js",
+    "static/js/2.bba0f52f.chunk.js.map": "/categories_and_rewards/static/js/2.bba0f52f.chunk.js.map",
+    "index.html": "/categories_and_rewards/index.html",
+    "precache-manifest.6553693b8fdf855f61ffd90d07bb109c.js": "/categories_and_rewards/precache-manifest.6553693b8fdf855f61ffd90d07bb109c.js",
+    "service-worker.js": "/categories_and_rewards/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/categories_and_rewards/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.728f7d5a.chunk.css.map": "/categories_and_rewards/static/css/main.728f7d5a.chunk.css.map",
+    "static/js/2.bba0f52f.chunk.js.LICENSE.txt": "/categories_and_rewards/static/js/2.bba0f52f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2acbd216.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.bba0f52f.chunk.js",
+    "static/css/main.728f7d5a.chunk.css",
+    "static/js/main.4701dba0.chunk.js"
+  ]
+}
