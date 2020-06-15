@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './style.scss';
 
+import { Table } from 'reactstrap';
 import { RewardItemSource } from './RewardItemSource'
-
 import { CategoryDropTarget } from './CategoryDropTarget'
 
 const _ = require("lodash")
@@ -17,9 +17,27 @@ const  CategoryHeadings = ({targets}) => (
 
 const SwimLane = ({ lane }) => (
     <ul className={'swimLane'}>
-        <li className={'laneName'}>{`${lane.name}`}</li>
-        {lane.categoryRewards.map(reward => <li className={'swimLaneReward'}>{`${reward.name}`}</li>)}
+        {/*<li className={'laneName'}>{`${lane.name}`}</li>*/}
+        <li className={'laneName'}>
+            <RewardItemSource name={`${lane.name}`} />
+        </li>
+        {lane.categoryRewards.map(reward => (
+            // <li className={'swimLaneReward'}>{`${reward.name}`}</li>)}
+            <li className={'swimLaneReward'}>
+                <CategoryDropTarget name={`${reward.name}`} />
+            </li>))
+        }
+            {/*)*/}
     </ul>
+)
+
+const TopColumnHeadings = () => (
+    <div id={'headingsRow'}>
+        <ul id={'colHeadings'}>
+            <li className={'colHeading'} >Rewards</li>
+            <li className={'colHeading'} >Categories</li>
+        </ul>
+    </div>
 )
 
 const SwimLanes = ({lanes}) => (
@@ -32,8 +50,6 @@ const SwimLanes = ({lanes}) => (
             }
         </ul>
     </div>
-
-
 )
 
 export  default function RewardBoard(props) {
@@ -62,14 +78,76 @@ export  default function RewardBoard(props) {
 
     return (
         <div id={'rewardsBoard'}>
-            <div id={'headingsRow'}>
-                <ul id={'colHeadings'}>
-                   <li className={'colHeading'} >Rewards</li>
-                   <li className={'colHeading'} >Categories</li>
-                </ul>
-            </div>
+            <TopColumnHeadings />
+
             <CategoryHeadings targets={categoryDropTargets} />
             <SwimLanes lanes={swimLanes} />
         </div>
     )
+
+    // return (
+    //     <div>
+    //         <div id={'rewardsBoard'}>
+    //             <TopColumnHeadings />
+    //
+    //             <CategoryHeadings targets={categoryDropTargets} />
+    //             <SwimLanes lanes={swimLanes} />
+    //         </div>
+    //
+    //         <Table bordered  striped size="sm" id={'rewardsTable'}>
+    //             <thead>
+    //             <tr>
+    //                 <th>Rewards</th>
+    //                 <th colSpan={5}>Categories</th>
+    //             </tr>
+    //             <tr>
+    //                 <th>{'xyz'}</th>
+    //             </tr>
+    //             </thead>
+    //             <tbody>
+    //             <tr>
+    //                 <td scope="row"><RewardItemSource name={'R1'} /></td>
+    //                 <td><CategoryDropTarget name={'C1'}/></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td></td>
+    //             </tr>
+    //             <tr>
+    //                 <td scope="row"><RewardItemSource name={'R2'} /></td>
+    //                 <td></td>
+    //                 <td><CategoryDropTarget name={'C2'} /></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td></td>
+    //             </tr>
+    //             <tr>
+    //                 <td scope="row"><RewardItemSource name={'R3'} /></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td><CategoryDropTarget name={'C3'} /></td>
+    //                 <td></td>
+    //                 <td></td>
+    //             </tr>
+    //             <tr>
+    //                 <td scope="row"><RewardItemSource name={'R4'} /></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td><CategoryDropTarget name={'C4'} /></td>
+    //                 <td></td>
+    //             </tr>
+    //             <tr>
+    //                 <td scope="row"><RewardItemSource name={'R5'} /></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td></td>
+    //                 <td><CategoryDropTarget name={'C5'} /></td>
+    //             </tr>
+    //             </tbody>
+    //         </Table>
+    //
+    //     </div>
+    // )
 }
