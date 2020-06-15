@@ -19,7 +19,7 @@ const  CategoryHeadings = ({targets}) => (
 const SwimLane = ({ lane }) => (
     <ul className={'swimLane'}>
         <li className={'laneName'}>{`${lane.name}`}</li>
-        {lane.categoryTargets.map(target => <li>{`${target.name}`}</li>)}
+        {lane.categoryRewards.map(reward => <li className={'swimLaneReward'}>{`${reward.name}`}</li>)}
     </ul>
 )
 
@@ -56,15 +56,18 @@ export  default function RewardBoard(props) {
 
     const [dropTargets, setDropTargets] = useState(categoryDropTargets)
 
-    let swimLanes = rewardItemSources.map(item => ({id: item.id, name: item.name, categoryTargets: []}))
-    swimLanes[0].categoryTargets.push({id: "1", name:"C1"})
-    swimLanes[1].categoryTargets.push({id: "2", name:"C2"})
+    let swimLanes = rewardItemSources.map(item => ({id: item.id, name: item.name, categoryRewards: []}))
+    swimLanes[0].categoryRewards.push({id: "1", name:"R1"})
+    swimLanes[1].categoryRewards.push({id: "2", name:"R2"})
+    swimLanes[1].categoryRewards.push({id: "3", name:"R2"})
 
     return (
         <div id={'rewardsBoard'}>
             <div id={'headingsRow'}>
-                <span id={'rewards'}>Rewards</span>
-                <span id={'categories'}>Categories</span>
+                <ul id={'colHeadings'}>
+                   <li className={'colHeading'} >Rewards</li>
+                   <li className={'colHeading'} >Categories</li>
+                </ul>
             </div>
             <CategoryHeadings targets={categoryDropTargets} />
             <SwimLanes lanes={swimLanes} />
