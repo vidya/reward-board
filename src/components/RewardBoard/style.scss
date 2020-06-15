@@ -1,32 +1,15 @@
 
-
-
-div#headingsRow {
-  span#rewards {
-    margin: 40px;
-    color: red;
-  }
-  span#categories {
-    color: blue;
-    margin: 40px;
-  }
-}
-
 ul#colHeadings {
   list-style-type:none;
-  //display: inline;
   flex: 1;
 
   display: flex;
   flex-direction: row;
 
-  //margin-left: 0.8em;
-
   li.colHeading {
     flex: 0 0 3em;
     margin-right: 8em;
   }
-
 }
 
 ul#categoryHeadings, ul#swimLanes, ul#swimLane {
@@ -57,14 +40,11 @@ ul.swimLane {
   padding: 10px;
 
   list-style-type:none;
-  //margin-bottom:  0px;
 
   li.laneName {
     flex: 0 0 1.8em;
 
     margin: 2px;
-    //border: 1px solid blue;
-    //border-radius: 5px;
 
     padding: 3px;
 
@@ -91,14 +71,11 @@ ul#categoryHeadings {
   margin-left: 5em;
 
   list-style-type:none;
-  //margin-bottom:  0px;
 
   li.laneName {
     flex: 0 0 1.8em;
 
     margin: 2px;
-    //border: 1px solid blue;
-    //border-radius: 5px;
 
     padding: 3px;
 
