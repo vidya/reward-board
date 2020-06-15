@@ -4,8 +4,6 @@ import './style.scss';
 import { RewardItemSource } from './RewardItemSource'
 import { CategoryDropTarget } from './CategoryDropTarget'
 
-const _ = require("lodash")
-
 const  CategoryHeadings = ({targets}) => (
     <ul id={'categoryHeadings'}>
         {
@@ -21,7 +19,10 @@ const SwimLane = ({ lane }) => (
         </li>
         {lane.categoryRewards.map(reward => (
             <li  key={`${reward.id}`} className={'swimLaneReward'}>
-                <CategoryDropTarget name={`${reward.name}`} />
+                <CategoryDropTarget
+                    laneName={`${lane.name}`}
+                    name={`${reward.name}`}
+                    />
             </li>))
         }
     </ul>
