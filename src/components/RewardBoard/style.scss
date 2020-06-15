@@ -1,0 +1,93 @@
+
+ul#colHeadings {
+  list-style-type:none;
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+
+  li.colHeading {
+    flex: 0 0 3em;
+    margin-right: 8em;
+  }
+}
+
+ul#categoryHeadings, ul#swimLanes, ul#swimLane {
+  list-style-type:none;
+  li {
+    display: inline;
+    margin-right: 30px;
+  }
+}
+
+ul#categoryHeadings {
+  li {
+    display: inline;
+    margin-right: 40px;
+  }
+
+}
+
+ul.swimLane {
+  li.laneName {
+    border: 1px dotted black;
+  }
+}
+
+ul.swimLane {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  justify-self: center;
+
+  justify-content: left;
+
+  padding: 10px;
+
+  list-style-type:none;
+
+  li.laneName {
+    flex: 0 0 1.8em;
+
+    margin: 2px;
+
+    padding: 3px;
+
+    text-align: left;
+  }
+
+  li.swimLaneReward {
+    flex: 0 0 1.8em;
+    border: 1px dotted green;
+    height: 2em;
+  }
+}
+
+ul#categoryHeadings {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  justify-self: center;
+  justify-content: left;
+
+  margin-left: 5em;
+
+  list-style-type:none;
+
+  li.laneName {
+    flex: 0 0 1.8em;
+
+    margin: 2px;
+
+    padding: 3px;
+
+    text-align: left;
+  }
+}
+
