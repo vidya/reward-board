@@ -18,7 +18,8 @@ export const RewardItemSource = ({ name }) => {
         end: (item, monitor) => {
             const dropResult = monitor.getDropResult()
             if (item && dropResult) {
-                alert(`You dropped ${item.name} into ${dropResult.name}!`)
+                console.log(`RewardItemSource: You dropped ${item.name} into ${dropResult.name}!`)
+                // alert(`You dropped ${item.name} into ${dropResult.name}!`)
             }
         },
         collect: (monitor) => ({

@@ -20,7 +20,7 @@ const SwimLane = ({ lane }) => (
             <RewardItemSource name={`${lane.name}`} />
         </li>
         {lane.categoryRewards.map(reward => (
-            <li className={'swimLaneReward'}>
+            <li  key={`${reward.id}`} className={'swimLaneReward'}>
                 <CategoryDropTarget name={`${reward.name}`} />
             </li>))
         }
@@ -68,9 +68,9 @@ export  default function RewardBoard(props) {
     const [dropTargets, setDropTargets] = useState(categoryDropTargets)
 
     let swimLanes = rewardItemSources.map(item => ({id: item.id, name: item.name, categoryRewards: []}))
-    swimLanes[0].categoryRewards.push({id: "1", name:"R1"})
-    swimLanes[1].categoryRewards.push({id: "2", name:"R2"})
-    swimLanes[1].categoryRewards.push({id: "3", name:"R2"})
+    swimLanes[0].categoryRewards.push({id: "1", name:"C1"})
+    swimLanes[1].categoryRewards.push({id: "2", name:"C2"})
+    swimLanes[1].categoryRewards.push({id: "3", name:"C2"})
 
     return (
         <div id={'rewardsBoard'}>

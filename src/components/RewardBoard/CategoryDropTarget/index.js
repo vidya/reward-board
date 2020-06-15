@@ -21,7 +21,8 @@ const style = {
 
 export const CategoryDropTarget = (props) => {
     const myDropTarget = (props) => {
-        alert(`dropItem: ${props.name}`)
+        // alert(`dropItem: ${props.name}`)
+        console.log(`CategoryDropTarget: dropItem: ${props.name}`)
         return <div ref={drop}>{props.name}</div>
     }
     const [{ canDrop, isOver, dropResult, dropItem }, drop] = useDrop({
@@ -41,8 +42,8 @@ export const CategoryDropTarget = (props) => {
     let backgroundColor = 'green'
     if (isActive) {
         backgroundColor = 'darkgreen'
-        console.log(`(category, reward): (${props.name}, ${dropItem.name})`)
-        alert(`(category, reward): (${props.name}, ${dropItem.name})`)
+        console.log(`CategoryDropTarget: (category, reward): (${props.name}, ${dropItem.name})`)
+        // alert(`(category, reward): (${props.name}, ${dropItem.name})`)
 
     } else if (canDrop) {
         backgroundColor = 'darkkhaki'
@@ -51,7 +52,7 @@ export const CategoryDropTarget = (props) => {
     if (dropItem) {
         return (
             <div ref={drop} style={{ ...style, backgroundColor }}>
-                { props.name}
+                {/*{ props.name}*/}
                 <RewardItemSource name={dropItem.name} />
             </div>
         )

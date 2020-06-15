@@ -20,6 +20,14 @@ ul#categoryHeadings, ul#swimLanes, ul#swimLane {
   }
 }
 
+ul#categoryHeadings {
+  li {
+    display: inline;
+    margin-right: 40px;
+  }
+
+}
+
 ul.swimLane {
   li.laneName {
     border: 1px dotted black;
