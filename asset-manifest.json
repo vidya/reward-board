@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reward-board/static/css/main.728f7d5a.chunk.css",
+    "main.css": "/reward-board/static/css/main.b1f8c7ab.chunk.css",
     "main.js": "/reward-board/static/js/main.0bce4b81.chunk.js",
     "main.js.map": "/reward-board/static/js/main.0bce4b81.chunk.js.map",
     "runtime-main.js": "/reward-board/static/js/runtime-main.5cd8473f.js",
@@ -8,15 +8,15 @@
     "static/js/2.98772ffb.chunk.js": "/reward-board/static/js/2.98772ffb.chunk.js",
     "static/js/2.98772ffb.chunk.js.map": "/reward-board/static/js/2.98772ffb.chunk.js.map",
     "index.html": "/reward-board/index.html",
-    "precache-manifest.4bbddf61e1aad27bca17eff83a50a907.js": "/reward-board/precache-manifest.4bbddf61e1aad27bca17eff83a50a907.js",
+    "precache-manifest.a3ea21e17c232f15650b270d84ce58db.js": "/reward-board/precache-manifest.a3ea21e17c232f15650b270d84ce58db.js",
     "service-worker.js": "/reward-board/service-worker.js",
-    "static/css/main.728f7d5a.chunk.css.map": "/reward-board/static/css/main.728f7d5a.chunk.css.map",
+    "static/css/main.b1f8c7ab.chunk.css.map": "/reward-board/static/css/main.b1f8c7ab.chunk.css.map",
     "static/js/2.98772ffb.chunk.js.LICENSE.txt": "/reward-board/static/js/2.98772ffb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5cd8473f.js",
     "static/js/2.98772ffb.chunk.js",
-    "static/css/main.728f7d5a.chunk.css",
+    "static/css/main.b1f8c7ab.chunk.css",
     "static/js/main.0bce4b81.chunk.js"
   ]
 }

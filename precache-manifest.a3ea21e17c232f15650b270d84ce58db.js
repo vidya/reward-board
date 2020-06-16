@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ade60edc3258cf0d31adc248f6ad3e1",
+    "revision": "dce7c33dc03e790ce80c7efe6b851c66",
     "url": "/reward-board/index.html"
   },
   {
-    "revision": "e34706e3065f22522605",
-    "url": "/reward-board/static/css/main.728f7d5a.chunk.css"
+    "revision": "2e71b8dab8d3bdfda1bf",
+    "url": "/reward-board/static/css/main.b1f8c7ab.chunk.css"
   },
   {
     "revision": "c7d8e6b572c806ba5d36",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reward-board/static/js/2.98772ffb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e34706e3065f22522605",
+    "revision": "2e71b8dab8d3bdfda1bf",
     "url": "/reward-board/static/js/main.0bce4b81.chunk.js"
   },
   {
