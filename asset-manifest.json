@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/categories_and_rewards/static/css/main.728f7d5a.chunk.css",
-    "main.js": "/categories_and_rewards/static/js/main.4813c34c.chunk.js",
-    "main.js.map": "/categories_and_rewards/static/js/main.4813c34c.chunk.js.map",
-    "runtime-main.js": "/categories_and_rewards/static/js/runtime-main.50861216.js",
-    "runtime-main.js.map": "/categories_and_rewards/static/js/runtime-main.50861216.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/categories_and_rewards/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.22820d17.chunk.js": "/categories_and_rewards/static/js/2.22820d17.chunk.js",
-    "static/js/2.22820d17.chunk.js.map": "/categories_and_rewards/static/js/2.22820d17.chunk.js.map",
-    "index.html": "/categories_and_rewards/index.html",
-    "precache-manifest.e3e0127bc570c135ea073bc279d022cf.js": "/categories_and_rewards/precache-manifest.e3e0127bc570c135ea073bc279d022cf.js",
-    "service-worker.js": "/categories_and_rewards/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/categories_and_rewards/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.728f7d5a.chunk.css.map": "/categories_and_rewards/static/css/main.728f7d5a.chunk.css.map",
-    "static/js/2.22820d17.chunk.js.LICENSE.txt": "/categories_and_rewards/static/js/2.22820d17.chunk.js.LICENSE.txt"
+    "main.css": "/reward-board/static/css/main.728f7d5a.chunk.css",
+    "main.js": "/reward-board/static/js/main.cc8fbd6c.chunk.js",
+    "main.js.map": "/reward-board/static/js/main.cc8fbd6c.chunk.js.map",
+    "runtime-main.js": "/reward-board/static/js/runtime-main.5cd8473f.js",
+    "runtime-main.js.map": "/reward-board/static/js/runtime-main.5cd8473f.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/reward-board/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c32d9863.chunk.js": "/reward-board/static/js/2.c32d9863.chunk.js",
+    "static/js/2.c32d9863.chunk.js.map": "/reward-board/static/js/2.c32d9863.chunk.js.map",
+    "index.html": "/reward-board/index.html",
+    "precache-manifest.91bf67ef779898e15fc17dfd04a8b9d1.js": "/reward-board/precache-manifest.91bf67ef779898e15fc17dfd04a8b9d1.js",
+    "service-worker.js": "/reward-board/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/reward-board/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.728f7d5a.chunk.css.map": "/reward-board/static/css/main.728f7d5a.chunk.css.map",
+    "static/js/2.c32d9863.chunk.js.LICENSE.txt": "/reward-board/static/js/2.c32d9863.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.50861216.js",
+    "static/js/runtime-main.5cd8473f.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.22820d17.chunk.js",
+    "static/js/2.c32d9863.chunk.js",
     "static/css/main.728f7d5a.chunk.css",
-    "static/js/main.4813c34c.chunk.js"
+    "static/js/main.cc8fbd6c.chunk.js"
   ]
 }
